@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+     * {
+            box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        float: left;
+        padding: 20px;
+    }
+    ul{
+        overflow: hidden;
+    }
+    li{
+        list-style: none;
+        padding: 10px;
+    }
+    li a:hover{
+        background-color: crimson;
+    }
+    table{
+        width:100%;
+        text-align: center;
+    }
+    .side{
+        width: 50%;
+        float: left;
+        padding: 40px;
+    }
+    .box{
+        padding: 20px;
+        background-color: lightgrey;
+    }
+    .text-box{
+        padding: 0;
+    }
+    .text-box .left{
+        float:left;
+    }
+    .text-box .right{
+        float: right;
+    }
+    table thead th{
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+    }
+    .tdr{
+        width: 60%;
+        height: 150px;
+    }
+</style>
+
+</head>
+
+<body style="min-height: 100vh; background-color: #f8edeb;">
+    <!--Navbar-->
+    <nav style="background-color: cornflowerblue;">
+
+        <h1>
+            <a href="#">UZII</a>
+        </h1>
+
+            <ul>
+                <li style="float: left;">
+                    <a href="#">CATEGORY 1</a>
+                </li>
+                <li style="float: left;">
+                    <a href="#">CATEGORY 2</a>
+                </li>
+                <li style="float: left;">
+                    <a href="#">CATEGORY 3</a>
+                </li>
+
+                <li style="float: right;">
+                    <a href="#">Trolli (1)</a>
+                </li>
+                <li style="float: right;">
+                    <a href="#">Search!</a>
+                </li>
+            </ul>
+
+    </nav>
+<div style="clear: both;"></div>
+    <!--isi-->
+    <section class="side">
+        <h6 hidden>.</h6>
+        <article>
+            <header>
+                <h2>You Cart</h2>
+            </header>
+            
+            <!--Table-->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>
+                            <label for="quantity">Quantity</label>
+                        </th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="tdr">Shirt size small</td>
+                        <td>$20.00</td>
+                        <td>
+                            <select id="quantity">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" style="text-align:right; border-top:1px solid;">Subtotal : Rp.20.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
+
+<!--Box-->
+<section class="side">
+    <h6 hidden>.</h6>
+    <article class="box">
+        <header>
+            <h3>Summary (1 Item)</h3>
+        </header>
+        <div class="text-box" >
+            <p class="left">Subtotal</p>
+            <p class="right">$20.00</p>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="text-box" >
+            <p class="left">Shipping</p>
+            <p class="right">-</p>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="text-box" >
+            <p class="left">Est. Taxes</p>
+            <p class="right">-</p>
+            <div style="clear: both;"></div>
+        </div>
+        
+        <hr>
+
+        <div class="text-box" >
+            <p class="left">Total</p>
+            <p class="right">$20.00</p>
+            <div style="clear: both;"></div>
+        </div>
+        <div style="text-align: right;">
+        <button type="submit">Checkout</button>
+        </div>
+    </article>
+</section>
+<div style="clear: both;"></div>
+<!--Footer-->
+<footer style="width: 100%; padding-right: 20px;padding-bottom: 20px; background-color: cornflowerblue;">
+    <div style="float: left;">
+        <h3 style="float: left;">
+            <a href="#">UZII</a>
+        </h3>
+
+        <ul style="margin: 0; padding: 10px;">
+            <li style="float: left;">
+                <a href="#">Category x</a>
+            </li>
+            <li style="float: left;">
+                <a href="#">Category y</a>
+            </li>
+            <li style="float: left;">
+                <a href="#">Category z</a>
+            </li>
+        </ul>
+    </div>
+    <div style="float: right; text-align: right;">
+        <h3>Stay in Touch! Join our Newsletter</h3>
+        <input type="email" id="mail" name="email" placeholder="Enter Email">
+        <button>Subscribe</button>
+        </div>
+<div style="clear: both;"></div>
+</footer>
+
+</body>
+</html>
